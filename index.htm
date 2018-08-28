@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Boogle</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <article>
+
+<header>
+    <h4>Boogle</h4>
+    <section>
+        <img src="leftArrow.png" alt="HTML5 Icon" >
+        <img src="rightArrow.png" alt="HTML5 Icon" >
+        <img src="close.png" alt="HTML5 Icon" >
+        <img src="home.png" alt="HTML5 Icon" >
+        
+        <input class="inputWeb" type="text" value=" http://www.boogle.com" >
+
+        <input class="search" type="text">
+
+    </section>
+      
+</header>
+
+<div class="middlebody">
+
+    <article>
+
+        <div style="min-height: 100%;">
+
+    <div class="navHeader">
+        <div class="topnav" style="flex: 1">
+            <a class="active" href="#web">Web</a>
+                <div class="vl"></div>
+            <a href="#images">Images</a>
+                <div class="vl"></div>
+            <a href="#maps">Maps</a>
+                <div class="vl"></div>
+            <a href="#news">News</a>
+                <div class="vl"></div>
+            <a href="#more">more</a>
+        </div>
+        <div class="topnav">
+            <a href="#news">News</a>
+                <div class="vl"></div>
+            <a href="#more">more</a>
+        </div>
+    </div>
+
+    <div style=" flex-grow: 1;flex-shrink: 0;">
+        <h1>Boogle</h1>
+        <div class="boogleSearchMain">            
+            <div class="boogleSearch">
+                <input type="text" style="width: 500px;">
+            </div>                
+            <div>
+                <a class="aRef" href="#advancedSearch">Advanced Search</a>
+                <a class="aRef" href="#preferences">Preferences</a>
+            </div>                
+        </div>
+        <div style="display: table; margin: 0 auto">
+            <div style="display: flex">
+                <div id="button"><p>Boogle Search</p></div>
+                <div id="button"><p>I'm Feeling Lucky</p></div>
+            </div>
+        </div>        
+    </div>
+
+    <div class="footnavMain">   
+        <div class="footnav">             
+            <a href="#advertising">Advertising Programs</a>
+                <div class="vl"></div>
+            <a href="#solution">Business Solutions</a>
+                <div class="vl"></div>
+            <a href="#about">About Boogle</a>
+        </div>
+        <div><p> (c) 2018 Boogle</p></div>
+    </div>
+
+</div>
+
+</article>
+        
+</div>
+
+  <footer>
+    Footer
+  </footer>
+
+</article>
+
+</body>
+<style>
+
+    article {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    #button {
+        border: 1px solid;
+        padding: 0px;
+        margin: 4px;
+        padding-left: 2px;
+        padding-right: 2px;
+        box-shadow: 2px 2px;
+    }
+    #button p {
+        font-size: 15px;
+    }
+    .boogleSearch {
+        width: 0%;
+        margin: 0 auto;   
+    }
+    .boogleSearchMain {  
+        display: flex;           
+    }
+    .middlebody {
+        flex-grow: 1;
+        height: 99%;
+        width: 99%;
+    }
+    header, middlebody, footer {
+    flex-shrink: 0;
+}
+    h1 {
+        text-align: center;
+        margin: 0%;
+    }
+    .navHeader {
+        display: flex;
+        flex-shrink: 0;
+    }
+    .topnav {
+        overflow: hidden;
+        display: flex;
+    }
+    .topnav a {
+        float: left;
+        display: block;
+        color:#262655  ;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: underline;
+        font-size: 18px;
+    }
+    .footnavMain {
+        display: table;
+        margin: 0 auto;
+        flex-shrink: 0;
+    }
+    .footnav {
+        overflow: hidden;
+        display: flex;
+    }
+    .footnav a {
+        float: left;
+        display: block;
+        color:#262655;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: underline;
+        font-size: 18px;
+    }
+    .aRef {        
+        display: block;
+        color:#262655  ;
+        text-align: center;
+        text-decoration: underline;
+        font-size: 18px;        
+    }
+    .vl {
+        border-left: 2px solid black;
+        height: 30px;
+        align-self: center;
+    }
+    .topnav a.active {
+        color: black;
+        text-decoration: none;
+    }
+    input {
+        height: 25px;
+        align-items: center;
+        border-color: black;
+        border-radius: 2px;
+    }
+    .inputWeb {
+        flex: 1;        
+    }
+    .search {
+        background-image: url('search.png'); 
+        border: 2px solid #000; 
+        border-radius: 10px; 
+        background-repeat: no-repeat; 
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    html,body {
+        height: 99%;
+        width: 99%;
+    }
+    
+    img {
+        width: 35px;
+        height: 35px;
+    }
+
+    section {
+        display: flex;
+        /*flex-direction: row;*/
+    }
+
+    header {
+        color: white;
+        text-align: center;
+        border-style: solid;
+        border-color: black;
+        background-color:#DCDCDC;
+        padding: 0.5%;
+    }
+    footer {
+        text-align: right;
+        border-style: solid;
+        border-color: black;
+        background-color:#DCDCDC;
+        padding: 0.5%;
+    }       
+    h4 {
+        color: black;
+        text-align: center;
+        margin: 0.4%;
+    }    
+    p {
+        font-family: verdana;
+        font-size: 10px;
+    }
+    </style>
+    
+    
+</html>
